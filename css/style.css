@@ -1,0 +1,33 @@
+.grid {
+    display: grid;
+    grid-template-columns: 2% 3% 90% 3% 2%;
+    /* gap: 10px; */
+}
+
+
+.grid img {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+}
+
+img:hover {
+    box-shadow: 0 4px 8px #000000;
+    grid-column: 3 / span 1;
+}
+
+
+/* .grid img:nth-child(even) {
+    border: 5px dashed orange;
+}
+
+.grid img:first-child {
+    border: 5px solid green;
+    padding: 10px;
+}
+
+/* Specifically target the last image in the grid to span three columns */
+/* .grid img:last-child {
+    grid-column: span 3;
+} */ 
